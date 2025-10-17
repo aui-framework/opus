@@ -171,7 +171,7 @@ endif()
 
 if(MINGW AND (OPUS_FORTIFY_SOURCE OR OPUS_STACK_PROTECTOR))
   # ssp lib is needed for security features for MINGW
-  list(APPEND OPUS_REQUIRED_LIBRARIES ssp)
+  #list(APPEND OPUS_REQUIRED_LIBRARIES ssp)
 endif()
 
 if(OPUS_CPU_X86 OR OPUS_CPU_X64)
